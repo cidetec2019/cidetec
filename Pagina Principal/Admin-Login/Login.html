@@ -15,29 +15,24 @@
 			font-family: 'Boogaloo', cursive;
 			
 		}
-
 		*,
 		:after,
 		:before {
 			box-sizing: border-box
 		}
-
 		.clearfix:after,
 		.clearfix:before {
 			content: '';
 			display: table
 		}
-
 		.clearfix:after {
 			clear: both;
 			display: block
 		}
-
 		a {
 			color: inherit;
 			text-decoration: none
 		}
-
 		.login-wrap {
 			width: 100%;
 			margin: auto;
@@ -61,7 +56,6 @@
 			padding: 90px 70px 50px 70px;
 			background: rgba(0, 255, 98, 0);
 		}
-
 		.login-html .sign-in-htm,
 		.login-html .sign-up-htm,
 		.login-html .forgot-contraseña-htm {
@@ -74,20 +68,17 @@
 			backface-visibility: hidden;
 			transition: all .4s linear;
 		}
-
 		.login-html .sign-in,
 		.login-html .sign-up,
 		.login-html .forgot-contraseña,
 		.login-form .group .check {
 			display: none;
 		}
-
 		.login-html .tab,
 		.login-form .group .label,
 		.login-form .group .button {
 			text-transform: uppercase;
 		}
-
 		.login-html .tab {
 			font-size: 22px;
 			margin-right: 15px;
@@ -96,25 +87,21 @@
 			display: inline-block;
 			border-bottom: 2px solid transparent;
 		}
-
 		.login-html .sign-in:checked+.tab,
 		.login-html .sign-up:checked+.tab,
 		.login-html .forgot-contraseña:checked+.tab {
 			color: rgb(0, 0, 0);
 			border-color: #ffffffc4;
 		}
-
 		.login-form {
 			min-height: 345px;
 			position: relative;
 			perspective: 1000px;
 			transform-style: preserve-3d;
 		}
-
 		.login-form .group {
 			margin-bottom: 15px;
 		}
-
 		.login-form .group .label,
 		.login-form .group .input,
 		.login-form .group .button {
@@ -122,7 +109,6 @@
 			color: rgb(0, 0, 0);
 			display: block;
 		}
-
 		.login-form .group .input,
 		.login-form .group .button {
 			border: none;
@@ -130,21 +116,17 @@
 			border-radius: 25px;
 			background: rgb(252, 252, 252);
 		}
-
 		.login-form .group input[data-type="contraseña"] {
 			text-security: circle;
 			-webkit-text-security: circle;
 		}
-
 		.login-form .group .label {
 			color: rgb(0, 0, 0);
 			font-size: 12px;
 		}
-
 		.login-form .group .button {
 			background: #086aa3;
 		}
-
 		.login-form .group label .icon {
 			width: 15px;
 			height: 15px;
@@ -153,7 +135,6 @@
 			display: inline-block;
 			background: rgba(255, 255, 255, 0.1);
 		}
-
 		.login-form .group label .icon:before,
 		.login-form .group label .icon:after {
 			content: '';
@@ -163,54 +144,43 @@
 			position: absolute;
 			transition: all .2s ease-in-out 0s;
 		}
-
 		.login-form .group label .icon:before {
 			left: 3px;
 			width: 5px;
 			bottom: 6px;
 			transform: scale(0) rotate(0);
 		}
-
 		.login-form .group label .icon:after {
 			top: 6px;
 			right: 0;
 			transform: scale(0) rotate(0);
 		}
-
 		.login-form .group .check:checked+label {
 			color: rgb(0, 0, 0);
 		}
-
 		.login-form .group .check:checked+label .icon {
 			background: #02a1fd;
 		}
-
 		.login-form .group .check:checked+label .icon:before {
 			transform: scale(1) rotate(90deg);
 		}
-
 		.login-form .group .check:checked+label .icon:after {
 			transform: scale(1) rotate(-45deg);
 		}
-
 		.login-html .sign-in:checked~.login-form .sign-in-htm {
 			transform: rotate(0);
 		}
-
 		.login-html .sign-up:checked~.login-form .sign-up-htm {
 			transform: rotate(0);
 		}
-
 		.login-html .forgot-contraseña:checked~.login-form .forgot-contraseña-htm {
 			transform: rotate(0);
 		}
-
 		.hr {
 			height: 2px;
 			margin: 60px 0 50px 0;
 			background: rgb(255, 255, 255);
 		}
-
 		.foot-lnk {
 			text-align: center;
 		}
@@ -221,7 +191,7 @@
 	<div class="login-wrap">
 		<div class="login-html" >
 			<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1"
-				class="tab">Entrar</label>
+				class="tab"> Entrar </label>
 			<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Crear</label>
 			<input id="tab-3" type="radio" name="tab" class="forgot-contraseña"><label for="tab-3"
 				class="tab">¿Olvidado?</label>
@@ -240,7 +210,7 @@
 						<label for="check"><span class="icon"></span>Mantén la sesión abierta</label>
 					</div>
 					<div class="group">
-						<input type="submit" class="button btn-block" value="Entrar">
+						<a href="pre-vista administrador.html"> <input type="submit" class="button btn-block" value="Entrar"></a>
 					</div>
 					<!--
 						<div class="hr"></div>
